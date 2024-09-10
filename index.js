@@ -73,6 +73,9 @@ const authenticateToken = (req, res, next) => {
     next(); // 다음 미들웨어 또는 라우터로 이동
   });
 };
+app.get('/', (request, response) => {
+  response.send('hello World test!');
+});
 
 // 마이페이지 API 엔드포인트
 app.get('/mypage', authenticateToken, async (req, res) => {
