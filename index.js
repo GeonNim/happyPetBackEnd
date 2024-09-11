@@ -20,7 +20,7 @@ const app = express();
 // );
 app.use(
   cors({
-    origin: 'https://happypetfrontend.geonnim.com',
+    origin: ['https://happypetfrontend.geonnim.com','http://localhost:3000'],
     credentials: true,
   })
 );
